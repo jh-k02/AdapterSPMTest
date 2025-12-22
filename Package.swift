@@ -21,16 +21,16 @@ let package = Package(
         ),
 
         // 2. AppLovin Mediation Adapter (commit pin)
-        // .package(
-        //     url: "https://github.com/googleads/googleads-mobile-ios-mediation-applovin.git",
-        //     revision: "0bd2371f11814aed0354c912f0361df3b49c505c"
-        // ),
+        .package(
+            url: "https://github.com/googleads/googleads-mobile-ios-mediation-applovin.git",
+            revision: "0bd2371f11814aed0354c912f0361df3b49c505c"
+        ),
 
         // 3. InMobi Mediation Adapter (commit pin)
-        // .package(
-        //     url: "https://github.com/googleads/googleads-mobile-ios-mediation-inmobi.git",
-        //     revision: "2bb1f7330da5c2ced96267800866490e8a78511d"
-        // )
+        .package(
+            url: "https://github.com/googleads/googleads-mobile-ios-mediation-inmobi.git",
+            revision: "2bb1f7330da5c2ced96267800866490e8a78511d"
+        )
     ],
     targets: [
         .target(
@@ -43,16 +43,16 @@ let package = Package(
                 ),
 
                 // AppLovin Adapter (Product name per upstream Package.swift)
-                // .product(
-                //     name: "AppLovinAdapterTarget",
-                //     package: "googleads-mobile-ios-mediation-applovin"
-                // ),
+                .product(
+                    name: "AppLovinAdapterTarget",
+                    package: "googleads-mobile-ios-mediation-applovin"
+                ),
 
                 // InMobi Adapter (Product name per upstream Package.swift)
-                // .product(
-                //     name: "InMobiAdapterTarget",
-                //     package: "googleads-mobile-ios-mediation-inmobi"
-                // )
+                .product(
+                    name: "InMobiAdapterTarget",
+                    package: "googleads-mobile-ios-mediation-inmobi"
+                )
             ]
         )
     ]
