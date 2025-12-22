@@ -8,7 +8,6 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-        // 테스트용: 의존성 묶음 라이브러리
         .library(
             name: "AdapterSPMTest",
             targets: ["AdapterSPMTest"]
@@ -43,15 +42,15 @@ let package = Package(
                     package: "swift-package-manager-google-mobile-ads"
                 ),
 
-                // AppLovin Adapter
+                // AppLovin Adapter (Product name per upstream Package.swift)
                 .product(
-                    name: "GoogleMobileAdsMediationAppLovin",
+                    name: "AppLovinAdapterTarget",
                     package: "googleads-mobile-ios-mediation-applovin"
                 ),
 
-                // InMobi Adapter
+                // InMobi Adapter (Product name per upstream Package.swift)
                 .product(
-                    name: "GoogleMobileAdsMediationInMobi",
+                    name: "InMobiAdapterTarget",
                     package: "googleads-mobile-ios-mediation-inmobi"
                 )
             ]
