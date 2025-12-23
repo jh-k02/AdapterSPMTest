@@ -1,4 +1,5 @@
 // swift-tools-version: 5.8
+// 1.0.6 테스트
 
 import PackageDescription
 
