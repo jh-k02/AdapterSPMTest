@@ -55,9 +55,9 @@ let package = Package(
         "IronSourceAdapterTarget",
         "LiftoffMonetizeAdapterTarget",
 
-        .product(name: "MintegralAdapter", package: "googleads-mobile-ios-mediation-mintegral"),
-        .product(name: "UnityAdapter", package: "googleads-mobile-ios-mediation-unity"),
-        .product(name: "MolocoAdapter", package: "googleads-mobile-ios-mediation-moloco"),
+        .product(name: "MintegralAdapterTarget", package: "googleads-mobile-ios-mediation-mintegral"),
+        .product(name: "UnityAdapterTarget", package: "googleads-mobile-ios-mediation-unity"),
+        .product(name: "MolocoAdapterTarget", package: "googleads-mobile-ios-mediation-moloco"),
       ],
       path: "Sources/AdWhaleMediationAll"
     ),
