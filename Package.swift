@@ -13,10 +13,10 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(
-      url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-      exact: "12.12.0"
-    ),
+    // .package(
+    //   url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+    //   exact: "12.12.0"
+    // ),
     .package(
       url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git",
       exact: "13.5.0"
@@ -47,7 +47,7 @@ let package = Package(
     .target(
       name: "AdWhaleMediationAll",
       dependencies: [
-        .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
+        // .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
 
         "DTExchangeAdapterTarget",
         "InMobiAdapterTarget",
