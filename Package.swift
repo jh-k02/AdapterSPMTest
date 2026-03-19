@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.8
 import PackageDescription
 
 let package = Package(
@@ -8,24 +8,14 @@ let package = Package(
   ],
   products: [
     .library(
-      name: "AdWhaleMediationAll",
-      targets: ["AdWhaleMediationAll"]
+      name: "AdWhaleMediationAdapter",
+      targets: ["AdWhaleMediationAdapter"]
     ),
   ],
   dependencies: [
-    // 필요 시 명시적으로 추가
-    // .package(
-    //   url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-    //   exact: "13.0.0"
-    // ),
-
     .package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-inmobi.git",
       exact: "11.1.101"
-    ),
-    .package(
-      url: "https://github.com/googleads/googleads-mobile-ios-mediation-applovin.git",
-      exact: "13.5.100"
     ),
     .package(
       url: "https://github.com/googleads/googleads-mobile-ios-mediation-liftoffmonetize.git",
@@ -58,7 +48,7 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "AdWhaleMediationAll",
+      name: "AdWhaleMediationAdapter",
       dependencies: [
         .product(name: "DTExchangeAdapterTarget", package: "googleads-mobile-ios-mediation-dtexchange"),
         .product(name: "InMobiAdapterTarget", package: "googleads-mobile-ios-mediation-inmobi"),
@@ -70,7 +60,6 @@ let package = Package(
         .product(name: "UnityAdapterTarget", package: "googleads-mobile-ios-mediation-unity"),
         .product(name: "MolocoAdapterTarget", package: "googleads-mobile-ios-mediation-moloco"),
       ],
-      path: "Sources/AdWhaleMediationAll"
     ),
   ]
 )
