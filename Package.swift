@@ -52,7 +52,6 @@ let package = Package(
       dependencies: [
         .product(name: "DTExchangeAdapterTarget", package: "googleads-mobile-ios-mediation-dtexchange"),
         .product(name: "InMobiAdapterTarget", package: "googleads-mobile-ios-mediation-inmobi"),
-        .product(name: "AppLovinAdapterTarget", package: "googleads-mobile-ios-mediation-applovin"),
         .product(name: "IronSourceAdapterTarget", package: "googleads-mobile-ios-mediation-ironsource"),
         .product(name: "LiftoffMonetizeAdapterTarget", package: "googleads-mobile-ios-mediation-liftoffmonetize"),
         .product(name: "MintegralAdapterTarget", package: "googleads-mobile-ios-mediation-mintegral"),
